@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Courier+Prime:ital@1&family=Fasthand&family=Poppins:wght@200;300;600&family=Roboto+Mono:wght@700&family=Space+Grotesk&display=swap");
+
+:root {
+    --main-color: rgba(177, 183, 192, 255);
+    --sec-color: rgb(101, 101, 101);
+    --third-color: white;
+    --dark-color: black;
+    --primary-color: rgba(35, 60, 160, 255);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-color);
+}
+
+.container {
+    /* background-color: aqua; */
+    width: 75%;
+    height: auto;
+    margin-left: 12%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 3px black;
+    margin-top: 5%;
+    background-color: var(--third-color);
+}
+
+section {
+    margin-left: 6%;
+}
+
+.head {
+    /* background-color: red; */
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+}
+
+.left-head {
+
+    display: flex;
+    font-size: large;
+    font-weight: 550;
+
+}
+
+.hrtag {
+    height: 2px;
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+.leftIcon {
+    /* padding: 0 30px; */
+    position: absolute;
+
+    left: 2%;
+}
+
+.left-head .CompName {
+    font-size: larger;
+    margin-left: 10px;
+}
+
+.content {
+    color: var(--main-color);
+    font-size: x-small;
+
+}
+
+.line {
+    background-color: black;
+    width: 3px;
+    height: autp;
+    margin-right: 8px;
+}
+
+.item {
+    display: flex;
+    padding-right: 50px;
+}
+
+.item h3 {
+    color: var(--dark-color);
+    font-size: medium;
+}
+
+.right-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    padding-right: 20px;
+}
+
+.admin img {
+    border-radius: 50%;
+}
+
+.line1 {
+    background-color: pink;
+}
+
+.line2 {
+    background-color: purple;
+}
+
+.line3 {
+    background-color: blue;
+}
+
+.line4 {
+    background-color: green;
+}
+
+.line5 {
+    background-color: red;
+}
+
+/*Beginning of main content*/
+.navbar {
+
+    /* background-color: aqua; */
+    border-bottom-right-radius: 10px;
+}
+
+.navigation-bar {
+    /* background-color: aqua; */
+    padding: 20px 0;
+}
+
+.navigation-bar ul {
+    display: flex;
+    font-size: medium;
+
+}
+
+li {
+    list-style: none;
+    padding-right: 20px;
+    /* border: 1px solid black; */
+}
+
+.navigation-bar li i {
+    padding-right: 4px;
+    transition: all .3s ease-in;
+    color: var(--main-color);
+
+}
+
+.navigation-bar li a {
+    color: var(--main-color);
+    transition: all .3s ease-in;
+    text-decoration: none;
+}
+
+.navigation-bar li::after {
+    content: '';
+    margin: auto;
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: transparent;
+    transition: all 0.4s ease-in;
+
+
+}
+
+.navigation-bar li i {
+    color: var(--primary-color);
+}
+
+.navigation-bar li a:hover {
+    font-display: var(--primary-color);
+    color: var(--primary-color);
+
+}
+
+.navigation-bar li:hover:after {
+    width: 100%;
+
+    border-radius: 20px;
+    background-color: var(--primary-color);
+
+
+}
+
+/*Beginning of main2*/
+.box ul {
+    display: flex;
+    column-gap: 20px;
+    padding: 15px 10px;
+}
+
+.box li {
+    font-size: medium;
+    color: var(--main-color);
+
+}
+
+.box p {
+    text-align: center;
+    padding: 2px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all .3s ease-in;
+}
+
+.box p:hover {
+    transform: translate(-7px,-7px);
+    border-color: var(--main-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px var(--sec-color);
+}
+
+
+/*  Beginning of middlepart of Main*/
+.third {
+    width: 93%;
+    /* background-color: red; */
+}
+
+.Statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    position: relative;
+}
+
+.rightside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    /* background-color: rebeccapurple; */
+
+}
+
+.leftside {
+    font-size: 25px;
+    font-weight: 550;
+
+
+}
+
+.rightside select {
+    padding: 9px 10px;
+    border-radius: 10px;
+    font-family: poppins;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+.rightside .para p {
+    font-weight: 600;
+    font-size: small;
+    color: var(--dark-color);
+}
+
+.rightside p {
+    color: var(--third-color);
+}
+
+
+button {
+
+    font-size: medium;
+    cursor: pointer;
+    font-family: poppins;
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+    padding: 9px 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.export a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+.export i {
+    /* text-decoration:none; */
+    color: var(--third-color);
+}
+
+/*Beginning of stats*/
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* justify-content: space-between; */
+    column-gap: 10px;
+    width: 93%;
+    margin-top: 10px;
+
+
+}
+
+.B {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+
+
+
+}
+
+.B h2 {
+    font-size: 10px;
+    color: var(--sec-color);
+}
+
+.boxes span {
+    color: green;
+    font-size: 25px;
+    font-weight: 520;
+}
+
+.boxes p {
+    font-size: 12px;
+}
+
+.boxes .det h2 {
+    color: var(--primary-color);
+}
+
+.boxes .det2 span {
+    color: red;
+}
+
+
+/*Beginning of chart*/
+.main4 {
+    /* background-color: red; */
+    margin-top: 25px;
+}
