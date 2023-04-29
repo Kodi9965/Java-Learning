@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="second-line">
+        <div class="first f f2">
+          <input type="textarea" id="evaluate" />
+          <input type="button" value="clear" class="clear" onclick="clr()" />
+        </div>
+        <div class="second f f1">
+          <input type="button" onclick="disp('9')" value="9" />
+          <input type="button" onclick="disp('8')" value="8" />
+          <input type="button" onclick="disp('7')" value="7" />
+          <input type="button" onclick="disp('+')" value="+" />
+        </div>
+        <div class="third f f1">
+          <input type="button" onclick="disp('6')" value="6" />
+          <input type="button" onclick="disp('5')" value="5" />
+          <input type="button" onclick="disp('4')" value="4" />
+          <input type="button" onclick="disp('-')" value="-" />
+        </div>
+        <div class="fourth f f1">
+          <input type="button" onclick="disp('3')" value="3" />
+          <input type="button" onclick="disp('2')" value="2" />
+          <input type="button" onclick="disp('1')" value="1" />
+          <input type="button" onclick="disp('*')" value="*" />
+        </div>
+        <div class="fifth f f1">
+          <input type="button" onclick="disp('%')" value="%" />
+          <input type="button" onclick="disp('0')" value="0" />
+          <input type="button" onclick="disp('/')" value="/" />
+          <input type="button" value="=" onclick="calculate()" />
+
+
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <script src="index.js"></script>
+  </body>
+</html>
